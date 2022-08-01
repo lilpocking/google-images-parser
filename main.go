@@ -31,7 +31,7 @@ var (
 )
 
 func init() {
-	flag.StringVar(&text, "text", "", "That will be serched in yandex images")
+	flag.StringVar(&text, "text", "", "That will be serched in google images")
 	flag.StringVar(&timePeriod, "tbs", "", `
 	Set the period for which the image was published
 	If you want imagies in all period just don't enter this flag
@@ -48,7 +48,7 @@ func init() {
 
 	if text == "" {
 		log.Panic(`
-			Please enter text, that will be serched in yandex images.
+			Please enter text, that will be serched in google images.
 		For more information execute program with -? flag.
 		`)
 	}
